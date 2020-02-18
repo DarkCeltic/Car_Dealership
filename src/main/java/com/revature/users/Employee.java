@@ -71,15 +71,13 @@ public class Employee implements Serializable {
 	}
 
 	public void EmployeeOptions() {
-//		String option;
-//		Scanner input = new Scanner(System.in);
 		System.out.println("Welcome " + this.firstName + " to your account.");
 		System.out.println("Type 1 to see a list of vehicles");
 		System.out.println("Type 2 to see offers for vehicles");
 		System.out.println("Type 3 to accept or reject an offer for a vehicle");
 		System.out.println("Type 4 to add a vehicle");
 		System.out.println("Type 5 to remove a vehicle");
-		System.out.println("Type 6 to view all payments made");
+		System.out.println("Type 6 to view all payments");
 		System.out.println("Type 7 to return to the login page.");
 	}
 
@@ -131,7 +129,7 @@ public class Employee implements Serializable {
 			case "6":
 				for (Car c : fleet.getFleet()) {
 					if (c.isSold() == true) {
-						System.out.println(c.getOwner() + " Payment made: $" + c.getPaymentMade());
+						System.out.println(c.getOwner() + " Monthly Payment of: $" + c.getMonthlyPayments());
 					}
 				}
 				System.out.println();
@@ -201,7 +199,6 @@ public class Employee implements Serializable {
 		for (Car c : fleet.getFleet()) {
 			if (c.getVIN().equals(vIN)) {
 				System.out.println("There is already a vehicle with this VIN, please try again");
-//				EmployeeOptions(users, fleet);
 			}
 		}
 		System.out.println("Please enter the Year of the vehicle.");
@@ -214,7 +211,6 @@ public class Employee implements Serializable {
 		mileage = input.nextLine();
 		System.out.println("Please enter the Price of the vehicle.");
 		price = Double.parseDouble(input.nextLine());
-//		input.close();
 		Car c = new Car(price, vIN, make, model, mileage, year);
 		fleet.setFleet(c);
 		log.info(c.toString() + " was created by " + this.username);
@@ -227,7 +223,6 @@ public class Employee implements Serializable {
 		String vin;
 		System.out.println("Please enter the VIN of the vehicle you would like to remove");
 		vin = input.nextLine();
-//		input.close();
 		for (Car c : fleet.getFleet()) {
 			if (c.getVIN().equals(vin)) {
 				fleet.removeCar(c);

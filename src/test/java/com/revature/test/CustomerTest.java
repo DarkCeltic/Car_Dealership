@@ -47,22 +47,9 @@ class CustomerTest {
 		users.setCustomers(cus);
 		fleet.setFleet(car);
 		cus.bid(users, fleet);
-//		car.getOffers().put("Dmal", 10000.0);
 		
 		assertEquals("Testing if the car bid is added", true,car.getOffers().containsKey("DMal"));
 		
 	}
-	
-
-	@Test
-	public void makePaymentTest() {
-		car.setOwner(cus);
-		car.setSold(true);
-		car.setPaymentMade(158.25);
-		System.out.println(car.getPrice());
-		assertEquals("Price should have reduced from 10000 by 158.25", 9841.75, car.getPrice(),0);
-		assertEquals("The monthly payments should have reduced from 60 to 59",59 ,car.getRemainingPayments());
-	}
-	
 	
 }

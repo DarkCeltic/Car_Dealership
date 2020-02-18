@@ -85,8 +85,7 @@ public class Customer implements Serializable {
 		System.out.println("Type 2 to bid on a vehicle that you are interested in");
 		System.out.println("Type 3 to see vehicles that you own");
 		System.out.println("Type 4 to see how many payments that you have left on your vehicles");
-		System.out.println("Type 5 to make a payment on one of your vehicles");
-		System.out.println("Type 6 to go back to the main login screen.");
+		System.out.println("Type 5 to go back to the main login screen.");
 		option = input.nextLine();
 		customerDecision(users, fleet, option);
 	}
@@ -129,10 +128,6 @@ public class Customer implements Serializable {
 			CustomerOptions(users, fleet);
 			break;
 		case "5":
-			makePayment(users, fleet);
-			CustomerOptions(users, fleet);
-			break;
-		case "6":
 			LoadPage login = new LoadPage();
 			login.loginPage(users, fleet);
 			break;
@@ -140,7 +135,6 @@ public class Customer implements Serializable {
 			System.out.println("That is not a vaild option, please try again");
 			CustomerOptions(users, fleet);
 			break;
-//			}
 		}
 	}
 
@@ -160,32 +154,6 @@ public class Customer implements Serializable {
 				System.out.println();
 			} else {
 				System.out.println("A vehicle does not exist with this VIN. Try again.");
-			}
-		}
-	}
-
-	public void makePayment(Users users, Fleet fleet) {
-		Scanner input = new Scanner(System.in);
-		if (myCars.isEmpty()) {
-			System.out.println("You have not purchased any vehicles yet");
-		} else {
-			String carVIN = null;
-			Double paymentAmount;
-			for (Car c : myCars) {
-				System.out.println("Your monthly minimum is " + c.getMonthlyPayments() + " on vehicle " + c.toString());
-			}
-			System.out.println("What is the VIN of the vehicle that you want to pay on");
-			carVIN = input.nextLine();
-			System.out.println("How much do you want to offer for the vehicle");
-			paymentAmount = Double.parseDouble(input.nextLine());
-			for (Car c : myCars) {
-				if (c.getVIN().equals(carVIN)) {
-					// TODO check logic on this
-					c.setPaymentMade(paymentAmount);
-					log.info(this.username + " made a payment of $" + paymentAmount);
-					System.out.println(
-							"You have made a payment of $" + paymentAmount + " on your vehicle " + c.toString());
-				}
 			}
 		}
 	}

@@ -15,7 +15,6 @@ public class Car implements Serializable {
 	private boolean sold = false;
 	private double price;
 	private int remainingPayments = 60;
-	private double paymentMade;
 	private Customer owner;
 	private String VIN;
 	private String make;
@@ -57,17 +56,6 @@ public class Car implements Serializable {
 
 	public int getRemainingPayments() {
 		return remainingPayments;
-	}
-
-	public double getPaymentMade() {
-		return paymentMade;
-	}
-
-	// TODO check logic on this
-	public void setPaymentMade(double paymentMade) {
-		this.paymentMade = paymentMade;
-		price -= paymentMade;
-		remainingPayments--;
 	}
 
 	public Customer getOwner() {
@@ -127,7 +115,6 @@ public class Car implements Serializable {
 		offers.put(username, offer);
 	}
 
-	// TODO check logic on this
 	public double getMonthlyPayments() {
 		return (price / remainingPayments) + (price / remainingPayments) * 0.0445;
 	}
@@ -149,7 +136,6 @@ public class Car implements Serializable {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((offers == null) ? 0 : offers.hashCode());
 		result = prime * result + ((owner == null) ? 0 : owner.hashCode());
-		temp = Double.doubleToLongBits(paymentMade);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(price);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -199,8 +185,6 @@ public class Car implements Serializable {
 			if (other.owner != null)
 				return false;
 		} else if (!owner.equals(other.owner))
-			return false;
-		if (Double.doubleToLongBits(paymentMade) != Double.doubleToLongBits(other.paymentMade))
 			return false;
 		if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
 			return false;
