@@ -1,0 +1,6 @@
+2020-02-18 00:34:31 INFO  root:72 - kstra logged in
+2020-02-18 00:45:43 INFO  root:58 - com.revature.pojo.Database@483bf400 was deserialized
+2020-02-18 00:46:11 INFO  root:27 -  was serialized
+2020-02-18 09:57:04 INFO  root:58 - Database was deserialized
+2020-02-18 09:57:24 INFO  root:71 - kstra logged in
+2020-02-18 09:57:48 INFO  root:27 - Database was serialized
