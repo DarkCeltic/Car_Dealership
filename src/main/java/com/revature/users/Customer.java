@@ -11,6 +11,8 @@ import com.revature.pojo.Car;
 import com.revature.pojo.Fleet;
 import com.revature.pojo.Users;
 
+import jdk.internal.org.jline.utils.Log;
+
 public class Customer implements Serializable {
 	private static Logger log = Logger.getRootLogger();
 	/**
@@ -22,6 +24,22 @@ public class Customer implements Serializable {
 	private String username;
 	private String password;
 	private ArrayList<Car> myCars = new ArrayList<Car>();
+
+//	public public Customer() {
+//		super();
+//	}
+
+	public Customer(String firstName, String lastName, String username, String password) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.username = username;
+		this.password = password;
+	}
+	
+	public Customer() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getFirstName() {
 		return firstName;
@@ -61,14 +79,6 @@ public class Customer implements Serializable {
 
 	public void setMyCars(Car car) {
 		myCars.add(car);
-	}
-
-	public Customer(String firstName, String lastName, String username, String password) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.username = username;
-		this.password = password;
 	}
 
 	@Override
@@ -121,7 +131,7 @@ public class Customer implements Serializable {
 				System.out.println("You have not purchased any vehicles yet");
 			} else {
 				for (Car c : myCars) {
-					System.out.println("You have " + c.getRemainingPayments() + " payments left on " + c.toString());
+					System.out.println("You have " + c.getRemainingPayments() + " payments of $" +c.getMonthlyPayments() + "left on " + c.toString());
 				}
 			}
 			System.out.println();
@@ -150,12 +160,8 @@ public class Customer implements Serializable {
 			if (c.getVIN().equals(carVIN)) {
 				c.getOffers().put(this.username, offerPrice);
 				log.info(this.username + " made an offer on " + c.toString());
-				System.out.println("Congratulations your offer has been submited");
-				System.out.println();
-			} else {
-				System.out.println("A vehicle does not exist with this VIN. Try again.");
-			}
+				break;
+			} 
 		}
 	}
-
 }

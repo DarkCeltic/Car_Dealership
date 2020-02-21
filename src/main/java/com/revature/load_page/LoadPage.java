@@ -16,6 +16,7 @@ public class LoadPage {
 	DatabaseDAO dat = new DatabaseSerializationDAO();
 	Scanner input = new Scanner(System.in);
 	private static Logger log = Logger.getRootLogger();
+
 	public void loginPage(Users users, Fleet fleet) {
 
 		String option = "";
@@ -67,19 +68,23 @@ public class LoadPage {
 		switch (option) {
 		case "1":
 			for (Customer cus : users.getCustomers()) {
+				System.out.println(cus.getUsername());
 				if (cus.getUsername().equalsIgnoreCase(username) && cus.getPassword().equals(password)) {
-					log.info(username + " logged in"); 
+					log.info(username + " logged in");
 					cus.CustomerOptions(users, fleet);
 				}
 			}
+			log.info("Sorry, your information was incorrect");
 			break;
 		case "2":
 			for (Employee emp : users.getEmployees()) {
+				System.out.println(emp.getUsername());
 				if (emp.getUsername().equalsIgnoreCase(username) && emp.getPassword().equals(password)) {
-					log.info(username + " logged in"); 
+					log.info(username + " logged in");
 					emp.employeeDecision(users, fleet);
 				}
 			}
+			log.info("Sorry, your information was incorrect");
 			break;
 		case "3":
 			loginPage(users, fleet);
@@ -110,8 +115,7 @@ public class LoadPage {
 			} else {
 				Customer cust = new Customer(first, last, userName, password);
 				users.setCustomers(cust);
-				log.info( cust + " created");
-				System.out.println(users.getCustomers().toString());
+				log.info(cust + " created");
 				System.out.println();
 				System.out.println("Your account has been created " + cust.getFirstName());
 				System.out.println("If you would like to view your account Type 1");

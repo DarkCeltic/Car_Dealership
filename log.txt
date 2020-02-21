@@ -4,3 +4,89 @@
 2020-02-18 09:57:04 INFO  root:58 - Database was deserialized
 2020-02-18 09:57:24 INFO  root:71 - kstra logged in
 2020-02-18 09:57:48 INFO  root:27 - Database was serialized
+2020-02-20 18:50:27 INFO  root:58 - Database was deserialized
+2020-02-20 18:53:32 INFO  root:58 - Database was deserialized
+2020-02-20 18:55:39 INFO  root:58 - Database was deserialized
+2020-02-20 18:55:48 INFO  root:75 - Sorry, your information was incorrect
+2020-02-20 18:55:48 INFO  root:75 - Sorry, your information was incorrect
+2020-02-20 18:56:34 INFO  root:58 - Database was deserialized
+2020-02-20 18:56:42 INFO  root:75 - Sorry, your information was incorrect
+2020-02-20 18:56:42 INFO  root:75 - Sorry, your information was incorrect
+2020-02-20 18:58:15 INFO  root:58 - Database was deserialized
+2020-02-20 18:58:23 INFO  root:77 - Sorry, your information was incorrect
+2020-02-20 18:58:46 INFO  root:58 - Database was deserialized
+2020-02-20 18:58:57 INFO  root:77 - Sorry, your information was incorrect
+2020-02-20 18:59:44 INFO  root:58 - Database was deserialized
+2020-02-20 18:59:51 INFO  root:87 - Sorry, your information was incorrect
+2020-02-20 20:01:50 INFO  root:27 - Database was serialized
+2020-02-20 20:02:58 INFO  root:58 - Database was deserialized
+2020-02-20 20:03:06 INFO  root:73 - kstra logged in
+2020-02-20 20:03:22 INFO  root:83 - bjohn logged in
+2020-02-20 20:04:17 INFO  root:216 - Car [ 2020 Tesla Model S miles=15000 $35000.0 VIN=154882] was created by BJohn
+2020-02-20 20:04:22 INFO  root:27 - Database was serialized
+2020-02-20 20:26:14 INFO  root:27 - Database was serialized
+2020-02-20 20:40:24 INFO  root:58 - Database was deserialized
+2020-02-20 20:40:31 INFO  root:77 - Sorry, your information was incorrect
+2020-02-20 20:40:56 INFO  root:87 - Sorry, your information was incorrect
+2020-02-20 20:42:38 ERROR root:61 - File not found java.io.FileNotFoundException: Database.dat (The system cannot find the file specified)
+2020-02-20 20:42:52 INFO  root:27 - Database was serialized
+2020-02-20 20:43:46 INFO  root:27 - Database was serialized
+2020-02-20 20:43:52 INFO  root:27 - Database was serialized
+2020-02-20 20:45:50 INFO  root:58 - Database was deserialized
+2020-02-20 20:45:58 INFO  root:73 - kstra logged in
+2020-02-20 20:46:43 INFO  root:160 - KStra made an offer on Car [ 1999 Radon-Ulzer Repulsorlift Custom Built Podracer miles=25000 $1000000.0 VIN=156688]
+2020-02-20 20:49:45 INFO  root:27 - Database was serialized
+2020-02-20 20:50:52 INFO  root:58 - Database was deserialized
+2020-02-20 20:50:59 INFO  root:73 - kstra logged in
+2020-02-20 20:51:13 INFO  root:162 - KStra made an offer on Car [ 1999 Radon-Ulzer Repulsorlift Custom Built Podracer miles=25000 $1000000.0 VIN=156688]
+2020-02-20 20:51:29 INFO  root:27 - Database was serialized
+2020-02-20 21:01:12 INFO  root:58 - Database was deserialized
+2020-02-20 21:01:19 INFO  root:73 - kstra logged in
+2020-02-20 21:03:02 INFO  root:58 - Database was deserialized
+2020-02-20 21:03:08 INFO  root:73 - kstra logged in
+2020-02-20 21:03:36 INFO  root:58 - Database was deserialized
+2020-02-20 21:03:42 INFO  root:73 - kstra logged in
+2020-02-20 21:04:25 INFO  root:58 - Database was deserialized
+2020-02-20 21:04:33 INFO  root:73 - kstra logged in
+2020-02-20 21:05:09 INFO  root:58 - Database was deserialized
+2020-02-20 21:05:15 INFO  root:73 - kstra logged in
+2020-02-20 21:05:33 INFO  root:27 - Database was serialized
+2020-02-20 21:06:27 INFO  root:58 - Database was deserialized
+2020-02-20 21:06:34 INFO  root:73 - kstra logged in
+2020-02-20 21:06:44 INFO  root:164 - KStra made an offer on Car [ 1977 Incom Corporation T-65 X-wing starfighter miles=20000 $25000.0 VIN=144931]
+2020-02-20 21:06:54 INFO  root:27 - Database was serialized
+2020-02-20 21:07:16 INFO  root:58 - Database was deserialized
+2020-02-20 21:07:23 INFO  root:73 - kstra logged in
+2020-02-20 21:09:03 INFO  root:58 - Database was deserialized
+2020-02-20 21:09:14 INFO  root:83 - bjohn logged in
+2020-02-20 21:15:02 INFO  root:58 - Database was deserialized
+2020-02-20 21:15:09 INFO  root:83 - bjohn logged in
+2020-02-20 21:17:02 INFO  root:58 - Database was deserialized
+2020-02-20 21:17:07 INFO  root:83 - bjohn logged in
+2020-02-20 21:17:50 INFO  root:58 - Database was deserialized
+2020-02-20 21:18:00 INFO  root:83 - bjohn logged in
+2020-02-20 21:18:53 INFO  root:58 - Database was deserialized
+2020-02-20 21:19:01 INFO  root:83 - bjohn logged in
+2020-02-20 21:19:15 INFO  root:174 - Car [ 1999 Radon-Ulzer Repulsorlift Custom Built Podracer miles=25000 $90000.0 VIN=156688] was sold to customer Customer [firstName=Kenneth, lastName=Stratton, username=KStra, myCars=[Car [ 1999 Radon-Ulzer Repulsorlift Custom Built Podracer miles=25000 $90000.0 VIN=156688]]]
+2020-02-20 21:20:31 INFO  root:27 - Database was serialized
+2020-02-20 21:21:58 INFO  root:58 - Database was deserialized
+2020-02-20 21:22:05 INFO  root:83 - bjohn logged in
+2020-02-20 21:24:00 INFO  root:73 - kstra logged in
+2020-02-20 21:26:38 INFO  root:58 - Database was deserialized
+2020-02-20 21:26:45 INFO  root:73 - kstra logged in
+2020-02-20 21:27:37 INFO  root:83 - bjohn logged in
+2020-02-20 21:28:27 INFO  root:58 - Database was deserialized
+2020-02-20 21:28:35 INFO  root:83 - bjohn logged in
+2020-02-20 21:34:15 INFO  root:58 - Database was deserialized
+2020-02-20 21:34:21 INFO  root:83 - bjohn logged in
+2020-02-20 21:35:00 INFO  root:58 - Database was deserialized
+2020-02-20 21:35:06 INFO  root:83 - bjohn logged in
+2020-02-20 21:50:36 INFO  root:58 - Database was deserialized
+2020-02-20 21:50:44 INFO  root:83 - bjohn logged in
+2020-02-20 21:51:20 INFO  root:27 - Database was serialized
+2020-02-20 21:51:22 INFO  root:58 - Database was deserialized
+2020-02-20 21:51:29 INFO  root:83 - bjohn logged in
+2020-02-20 21:52:18 INFO  root:118 - Customer [firstName=David, lastName=Smith, username=DSmi, myCars=[]] created
+2020-02-20 21:53:29 INFO  root:58 - Database was deserialized
+2020-02-20 21:53:45 INFO  root:118 - Customer [firstName=David, lastName=Smith, username=DSMi, myCars=[]] created
+2020-02-20 21:53:56 INFO  root:27 - Database was serialized

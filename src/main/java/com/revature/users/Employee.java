@@ -127,10 +127,19 @@ public class Employee implements Serializable {
 				option = input.nextLine();
 				break;
 			case "6":
-				for (Car c : fleet.getFleet()) {
-					if (c.isSold() == true) {
-						System.out.println(c.getOwner() + " Monthly Payment of: $" + c.getMonthlyPayments());
+				for (Customer e : users.getCustomers()) {
+					if (!e.getMyCars().isEmpty()) {
+						for (Car c : e.getMyCars()) {
+							System.out.println(e.getUsername() + " has " + c.getRemainingPayments()
+									+ " Monthly Payments of: $" + c.getMonthlyPayments() + " left");
+						}
 					}
+
+//				for (Car c : fleet.getFleet()) {
+//					System.out.println(c.isSold());
+//					if (c.isSold() == true) {
+//						System.out.println(c.getOwner() +" has "+ c.getRemainingPayments()+" Monthly Payments of: $" + c.getMonthlyPayments());
+//					}
 				}
 				System.out.println();
 				EmployeeOptions();
@@ -155,7 +164,6 @@ public class Employee implements Serializable {
 		switch (option) {
 		case "1":
 			for (Car c : fleet.getFleet()) {
-				System.out.println("Looking at " + c);
 				if (c.getVIN().equals(vin)) {
 					for (Customer cus : users.getCustomers()) {
 						if (cus.getUsername().equalsIgnoreCase(username)) {
